@@ -2,7 +2,7 @@ body{
     background: linear-gradient(#0b3602, #000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 100px;
+    margin-block: 100px;
     text-align: center;
 }
 h1{
