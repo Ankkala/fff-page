@@ -1,0 +1,107 @@
+body{
+    background: linear-gradient(#0b3602, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 100px;
+    text-align: center;
+}
+h1{
+    color:white;
+    font-family: "courier", "sans-serif", "arial";
+    font-size: 25px;
+}
+p{
+    color:white;
+    font-family: "courier", "sans-serif", "arial";
+}
+div{
+    text-align: center;
+    margin: auto;
+    max-width: 850px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+a{
+    color: #32a852;
+}
+.wrap {
+min-height: 100vh;
+display: grid;
+place-items: center;
+padding: 32px 16px;
+}
+.card {
+width: 100%;
+max-width: 720px;
+background: rgba(255, 255, 255, 0.06);
+border: 1px solid rgba(255, 255, 255, 0.12);
+border-radius: 18px;
+padding: 28px;
+backdrop-filter: blur(10px);
+box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+.grid {
+display: grid;
+gap: 12px;
+margin-top: 18px;
+}
+label {
+    display: grid;
+    gap: 8px;
+    font-size: 14px;
+    color: rgba(232, 236, 255, 0.85);
+}
+input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(20, 28, 54, 0.7);
+    color: #e8ecff;
+    padding: 12px 14px;
+    font-family: "courier", "sans-serif", "arial";
+    font-size: 16px;
+    outline: none;
+}
+input[type="email"]:focus {
+    border-color: rgba(126, 182, 255, 0.9);
+    box-shadow: 0 0 0 4px rgba(126, 182, 255, 0.18);
+}
+button {
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 13px;
+    font-family: "courier", "sans-serif", "arial";
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #0b1020;
+    background: #32a852;
+}
+button:hover { filter: brightness(1.05); }
+button:active { transform: translateY(1px); }
+.fineprint {
+    margin-top: 12px;
+    font-size: 12px;
+    color: rgba(232, 236, 255, 0.65);
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: end;
+}
+@media (max-width: 540px) {
+    .row { grid-template-columns: 1fr; }
+}
+/* honeypot should be invisible + not focusable */
+.hp {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
